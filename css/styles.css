@@ -1,0 +1,134 @@
+/* основной цвет текста  #212121
+вторичный цвет текста #757575
+цвет акцента #2196F3
+белый текст #FFFFFF
+белый цвет с прозрачностью rgba(255, 255, 255, 0.6)
+основной цвет фона #F5F5F5
+вторичный цвет фона #F5F4FA
+акцентный цвет фона #2F303A
+цвет кнопки #F5F4FA
+акцентный цвет кнопки #2196F3
+цвет ховера кнопки #188CE8 */
+
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-text-color: #2196F3;
+    --white-text-color: #ffffff;
+    --black-text-color: #000000;
+    --white-text-rgba: rgba(255, 255, 255, 0.6);
+    --primary-bg-color: #F5F5F5;
+    --secondary-bg-color: #F5F4FA;
+    --accent-bg-color: #2F303A;
+    --button-bg-color: #F5F4FA;
+    --button-accent: #2196F3;
+    --button-hover: #188CE8;
+
+
+}
+body{
+color: var(--primary-text-color);
+}
+
+.list {
+    text-decoration: none;
+    list-style: none;
+
+}
+
+/* header */
+.logo{
+   color: var(--accent-text-color);
+   text-decoration: none;
+}
+
+.logo-accent{
+    color: var(--black-text-color);
+}
+.nav .list{
+    color: var(--primary-text-color);
+}
+.nav .list:hover,
+.nav .list:focus{
+    color: var(--accent-text-color);
+}
+.nav .list.current {
+    color: var(--accent-text-color);
+}
+.list .link{
+    color: var(--secondary-text-color);
+}
+.list .link:hover,
+.list .link:focus{
+color: var(--accent-text-color);
+}
+
+/* hero */
+.hero{
+background-color: var(--accent-bg-color);
+}
+.hero-title{
+    color: var(--white-text-color);
+    text-transform: uppercase;
+}
+.button{
+    color: var(--white-text-color);
+    background-color: var(--button-accent);
+    cursor: pointer;
+}
+.button:hover,
+.button:focus{
+    background-color: var(--button-hover);
+}
+
+/* Наші особливості */
+.title{
+    text-transform: uppercase;
+}
+.text{
+    color: var(--secondary-text-color);
+}
+
+/* Чим ми займаємося */
+
+
+/* Наша команда */
+.team{
+    background-color: var(--secondary-bg-color);
+}
+.desc{
+    color: var(--secondary-text-color);
+}
+
+/* Footer */
+.footer{
+    background-color: var(--accent-bg-color);
+}
+
+.footer .logo-accent {
+    color: var(--white-text-color);
+}
+.address .list{
+    color: var(--white-text-color);
+    font-style: normal;
+}
+.address .link {
+    color: var(--white-text-rgba);
+}
+
+
+ /* portflio */
+ .portfolio .button {
+    background-color: var(--secondary-bg-color);
+    color: var(--primary-text-color);
+    border-color: transparent;
+   
+ }
+  .portfolio .button:hover,
+  .portfolio .button:focus{
+      background-color: var(--button-accent);
+      color: var(--white-text-color);
+   }
+   .portfolio-text {
+   color: var(--secondary-text-color);
+   }
