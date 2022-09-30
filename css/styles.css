@@ -145,15 +145,18 @@ body{
 
 .subtitlt{
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19; 
 }
 
 .desc{
     color: var(--secondary-text-color);
-    font-size: 16px;
-    line-height: 1.19;    
 }
+
+.subtitlt,
+.desc{
+    font-size: 16px;
+    line-height: 1.19;
+}
+
 
 /* Footer */
 
@@ -165,13 +168,19 @@ body{
     color: var(--white-text-color);
 }
 
-.address .list{
+.address .city,
+.address .link {
     color: var(--white-text-color);
     font-style: normal;
     font-size: 14px;
     line-height: 1.7;
-}
+    }
 
+.city:hover,
+.city:focus {
+    color: var(--accent-text-color);
+}
+   
 .address .link {
     color: var(--white-text-rgba);
 }
