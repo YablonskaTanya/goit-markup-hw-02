@@ -32,15 +32,33 @@ body{
     letter-spacing: 0.03em;
 }
 
-.list{
+.list {
     text-decoration: none;
     list-style: none;
 }
 
-.section-title,
-.title-portfolio {
-    visibility: hidden;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
+
+.header,
+.section,
+.work,
+.portfolio
+{
+    background-color: var(--white-bg-color);
+}
+
 /* header */
 
 .logo{
@@ -180,7 +198,8 @@ body{
 }
 
 .address .city,
-.address .link {
+.footer .link-footer
+{
     color: var(--white-text-color);
     font-style: normal;
     font-size: 14px;
@@ -192,8 +211,9 @@ body{
     color: var(--accent-text-color);
 }
    
-.address .link {
+.footer .link-footer {
     color: var(--white-text-rgba);
+
 }
 
  /* portflio */
