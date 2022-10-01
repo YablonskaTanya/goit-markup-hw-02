@@ -215,6 +215,10 @@ body{
     color: var(--white-text-rgba);
 
 }
+.link-footer:hover,
+.link-footer:focus{
+    color: var(--accent-text-color);
+}
 
  /* portflio */
 
